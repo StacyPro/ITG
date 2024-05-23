@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>info form</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="form">
+      <h1>tell us about your cat</h1>
+      <form method="post">
+        <label for="pet-name"> name </label>
+        <input type="text" id="pet-name" name="pet-name" required />
+        <br />
+        <label for="pet-type">breed</label>
+        <select id="pet-type" name="pet-type" required>
+          <option value="">please choose</option>
+          <option value="domestoc cat">domestoc cat</option>
+          <option value="abyssinian">abyssinian</option>
+          <option value="british shorthair">british shorthair</option>
+          <option value="ragdoll">ragdoll</option>
+          <option value="main coon cat">main coon cat</option>
+          <option value="devon rex">devon rex</option>
+          <option value="exotic shortcut">exotic shortcut</option>
+        </select>
+        <br />
+        <label for="birthday">birthday</label>
+        <input
+          type="date"
+          id="birthday"
+          min="2024-01-01"
+          max="2025-01-01"
+          name="birthday"
+        />
+        <br />
+        <label>gender</label>
+        <input
+          type="radio"
+          id="pet-gender-male"
+          name="pet-gender"
+          value="male"
+          required
+        />
+        <label for="pet-gender-male">male</label>
+        <input
+          type="radio"
+          id="pet-gender-female"
+          name="pet-gender"
+          value="female"
+          required
+        />
+        <label for="pet-gender-female">female</label>
+        <br />
+        <label for="pet-vet">cat's doctor</label>
+        <input type="text" id="pet-vet" name="pet-vet" />
+        <br />
+        <div><h2>tell us about yourself</h2></div>
+        <label for="owner-name"> Your name </label>
+        <input type="text" id="owner-name" name="owner-name" required />
+        <br />
+        <label for="owner-email">email</label>
+        <input type="email" id="owner-email" name="owner-email" required />
+        <br />
+        <label for="owner-phone">contact number</label>
+        <input
+          type="tel"
+          id="owner-phone"
+          name="owner-phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <br />
+        <input type="submit" value="submit" />
+      </form>
+    </section>
+  </body>
+</html>
