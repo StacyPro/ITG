@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogger Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7ede2;
+      }
+      header {
+        background-color: #84a59d;
+        color: #f5cac3;
+        padding: 10px 0;
+        text-align: center;
+      }
+      header img {
+        height: 50px;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5cac3;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .blogger-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        animation: fadeIn 2s ease-in;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .story {
+        text-align: center;
+        margin: 20px 0;
+        color: #84a59d;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        animation: fadeIn 2s ease-in;
+      }
+      .gallery img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+        animation: pulse 1s infinite;
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <link
+      rel="icon"
+      href="./img/icons8-cat-face-96.png"
+      type="image/cat-face-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./img/icons8-cat-face-96.png" alt="Logo" />
+      <h1>Hi there!</h1>
+    </header>
+
+    <div class="container">
+      <img
+        src="./img/beautiful-kitten-with-colorful-clouds.jpg"
+        alt="Blogger Photo"
+        class="blogger-photo"
+      />
+      <div class="story">
+        <h2>About Me</h2>
+        <p style="display: block; text-align: center">
+          Hello! I'm Jane Doe, a passionate blogger who loves to write about
+          pink clouds, milk, and playful lifestyle. Join me on my adventures
+          around the world as I share my experiences with you. I also would love
+          to hear your stories and view some pictures about your favorite
+          adventures."
+        </p>
+        <div class="container">
+          <h3>Gallery</h3>
+          <div class="gallery">
+            <img src="./img/cat.gif" alt="Image 1" />
+            <img src="./img/ehi6_3y6j_210708.jpg" alt="Image 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
