@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W5</title>
+    <style>
+      body {
+        margin: auto 0;
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .header {
+        background-color: #d3d3d3;
+        font-size: 10px;
+        text-align: center;
+        padding: 20px;
+      }
+      .main-content {
+        font-size: 20px;
+        display: flex;
+        flex: 1;
+        text-align: center;
+        background-color: #fefae0;
+      }
+
+      .main-area {
+        flex: 3;
+        background-color: #fff3cd;
+        padding: 20px;
+      }
+
+      .inner-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .box {
+        background-color: #ffeb99;
+        flex: 1 1 calc(50% - 10px);
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .box:last-child {
+        flex: 1 1 100%;
+      }
+
+      .sidebar {
+        flex: 1;
+        background-color: #d4edda;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        display: flex;
+        background-color: #d3d3d3;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .footer-section {
+        flex: 1;
+        background-color: #f8f9fa;
+        padding: 40px;
+        box-sizing: border-box;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header"><h1>[Шапка страницы]</h1></header>
+    <main class="main-content">
+      <section class="main-area">
+        <h3>[Основная часть]</h3>
+        <div class="inner-content">
+          <div class="box">[Ещё 1]</div>
+          <div class="box">[Ещё 2]</div>
+          <div class="box">[Ещё 3]</div>
+        </div>
+      </section>
+      <aside class="sidebar">[Боковая область]</aside>
+    </main>
+    <footer class="footer">
+      <div class="footer-section">[Секция футера 1]</div>
+      <div class="footer-section">[Секция футера 2]</div>
+      <div class="footer-section">[Секция футера 3]</div>
+      <div class="footer-section">[Секция футера 4]</div>
+    </footer>
+  </body>
+</html>
